@@ -21,4 +21,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Trigger Render deploy
-        run: curl -X POST ${{ secrets.https://api.render.com/deploy/srv-d1nlg9c9c44c73efio0g?key=Y-uv_12-VLc }}
+        run: curl -X POST ${{ secrets.secrets.RENDER_DEPLOY_HOOK }}
